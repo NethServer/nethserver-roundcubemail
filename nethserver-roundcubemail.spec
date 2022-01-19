@@ -1,6 +1,6 @@
 Summary: NethServer configuration for Roundcube mail client
 Name: nethserver-roundcubemail
-Version: 1.5.0
+Version: 1.5.1
 Release: 1%{?dist}
 License: GPL
 Source: %{name}-%{version}.tar.gz
@@ -41,6 +41,9 @@ cp -a api/* %{buildroot}/usr/libexec/nethserver/api/%{name}/
 %dir %{_nseventsdir}/%{name}-update
 
 %changelog
+* Wed Jan 19 2022 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 1.5.1-1
+- Roundcubemail: the mysql upgrade is misconfigured - Bug NethServer/dev#6619
+
 * Tue Jul 06 2021 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 1.5.0-1
 - Roundcubemail 1.4.11 - NethServer/dev#6541
 
