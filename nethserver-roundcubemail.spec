@@ -1,7 +1,7 @@
 Summary: NethServer configuration for Roundcube mail client
 Name: nethserver-roundcubemail
 Version: 1.5.1
-Release: 1%{?dist}
+Release: 2%{?dist}
 License: GPL
 Source: %{name}-%{version}.tar.gz
 BuildArch: noarch
